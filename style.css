@@ -1,17 +1,75 @@
-*{
-    padding: 0;
-    margin: 0;
-    
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+:root {
+  --cor-principal: #ffffff;
 }
 
 body{
-    background: url(img/fundo.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
 }
-img{
-    width: 20px;
+.container {
+  background: #726f6fb7;
+  width: 500px;
+  padding: 10px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+}
+
+.input-text {
+  border: none;
+  width: 300px;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 0 15px;
+  color: var(--cor-principal);
+  background: green;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+img {
+  width: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.item {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.item:hover img{
+    opacity: 1;
+}
+.img-item {
+  margin-right: 5px;
+
 }
