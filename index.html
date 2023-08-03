@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do List</title>
+    <title>Lista de Afazeres</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,24 +14,10 @@
   </head>
   <body>
     <main class="container">
-      <input class="input-text" placeholder="Escreva aqui..." type="text" />
-      <button class="btn">ADICIONAR</button>
-      <ul class="list-item">
-        <li class="item">
-          <p>Coffee</p>
-          <div class="img-item">
-            <img src="img/checked.png" alt="checked" />
-            <img src="img/trash.png" alt="lixeira" />
-          </div>
-        </li>
-        <li class="item">
-          <p>Tea</p>
-          <div class="img-item">
-            <img src="img/checked.png" alt="checked" />
-            <img src="img/trash.png" alt="lixeira" />
-          </div>
-        </li>
-      </ul>
+      <input class="input-text" placeholder="Escreva aqui..." />
+      <button class="button-task" onclick="addNewTask()">Adicionar</button>
+      <ul class="list-item"></ul>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
