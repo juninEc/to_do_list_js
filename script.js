@@ -5,13 +5,20 @@ let listItems = []
 
 function addNewTask() {
 
-  listItems.push({
-    task_item: input.value,
-    completed: false
-  })
-  input.value = ''
+  const taskInput = input.value.trim();
+  if(taskInput !== ""){
+    listItems.push({
+      task_item: input.value,
+      completed: false
+    })
 
-  displayTask()
+    input.value = '' 
+
+    displayTask()
+  }else{
+    alert("Preencha o campo de texto!")
+  }
+  
 }
 
 function displayTask() {
